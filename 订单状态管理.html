@@ -1,0 +1,233 @@
+<div class="nav-tabs-custom">
+	<ul class="nav nav-tabs">
+		<li class="nav-tabs-item active" data-tab="#issued"><a>已发放订单</a></li>
+		<li class="nav-tabs-item" data-tab="#notIssued"><a>未发订单</a></li>
+		<li class="nav-tabs-item" data-tab="#reGoods"><a>退订单</a></li>
+	</ul>
+	<div class="tab-content">
+		<div class="tab-pane active" id="issued">
+			<div class="form-inline">
+				<div class="row">
+					<div class="col-sm-12 table-responsive">
+						<table class="table table-bordered table-hover">
+							<thead>
+								<tr role="row">
+									<th>订单号</th>
+									<th>产品编号</th>
+									<th>产品</th>
+									<th>规格</th>
+									<th>数量</th>
+									<th>接受地址</th>
+									<th>要求发货时间</th>
+									<th>确认发货时间</th>
+									<th>实际发货时间</th>
+									<th>已发放时间</th>
+									<th>详细情况</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>CG1111</td>
+									<td>1</td>
+									<td>钢笔</td>
+									<td></td>
+									<td>100</td>
+									<td>临安</td>
+									<td>2011-11-11</td>
+									<td>2011-11-11</td>
+									<td>CG1111</td>
+									<td>CG1111</td>
+									<td><a>详细情况</a></td>
+								</tr>
+								<tr>
+									<td>CG1111</td>
+									<td>1</td>
+									<td>钢笔</td>
+									<td></td>
+									<td>100</td>
+									<td>临安</td>
+									<td>2011-11-11</td>
+									<td>2011-11-11</td>
+									<td>CG1111</td>
+									<td>CG1111</td>
+									<td><a>详细情况</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-5 dataTables_info">
+						<p>共<span>10</span>条数据</p>
+						<p> 每页显示
+							<select class="form-inline form-control select-sm pd0">
+								<option>10</option>
+								<option>20</option>
+								<option>30</option>
+							</select>
+						</p>
+						<p>共<span>2</span>页</p>
+					</div>
+					<div class="col-sm-7">
+						<div class="dataTables_paginate paging_simple_numbers" id="example2_paginate">
+							<ul class="pagination">
+								<li class="disabled"><a href="#"><i class="fa fa-angle-left">上一页</i></a></li>
+								<li><a href="#">1</a></li>
+								<li class="active"><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#"><i class="fa fa-angle-right">下一页</i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tab-pane" id="notIssued">
+			<div class="form-inline">
+				<div class="row">
+					<div class="col-sm-12 table-responsive">
+						<table class="table table-bordered table-hover">
+							<thead>
+								<tr role="row">
+									<th>订单号</th>
+									<th>产品编号</th>
+									<th>产品</th>
+									<th>规格</th>
+									<th>数量</th>
+									<th>接受地址</th>
+									<th>要求发货时间</th>
+									<th>确认发货时间</th>
+									<th>已发放数量</th>
+									<th>发货</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>CG1111</td>
+									<td>1</td>
+									<td>钢笔</td>
+									<td></td>
+									<td>100</td>
+									<td>临安</td>
+									<td>2011-11-11</td>
+									<td>2011-11-11</td>
+									<td>50</td>
+									<td>部分完成</td>
+								</tr>
+								<tr>
+									<td>CG1111</td>
+									<td>1</td>
+									<td>钢笔</td>
+									<td></td>
+									<td>200</td>
+									<td>临安</td>
+									<td>2011-11-11</td>
+									<td>2011-11-11</td>
+									<td>0</td>
+									<td>未完成</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-5 dataTables_info">
+						<p>共<span>10</span>条数据</p>
+						<p> 每页显示
+							<select class="form-inline form-control select-sm pd0">
+								<option>10</option>
+								<option>20</option>
+								<option>30</option>
+							</select>
+						</p>
+						<p>共<span>2</span>页</p>
+					</div>
+					<div class="col-sm-7">
+						<div class="dataTables_paginate paging_simple_numbers" id="example2_paginate">
+							<ul class="pagination">
+								<li class="disabled"><a href="#"><i class="fa fa-angle-left">上一页</i></a></li>
+								<li><a href="#">1</a></li>
+								<li class="active"><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#"><i class="fa fa-angle-right">下一页</i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="tab-pane" id="reGoods">
+			<div class="form-inline">
+				<div class="row">
+					<div class="col-sm-12 table-responsive">
+						<table class="table table-bordered table-hover">
+							<thead>
+								<tr role="row">
+									<th>订单号</th>
+									<th>工厂</th>
+									<th>产品</th>
+									<th>规格</th>
+									<th>数量</th>
+									<th>发货仓库</th>
+									<th>发货详情</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>th111</td>
+									<td>A</td>
+									<td>钢笔</td>
+									<td></td>
+									<td>300</td>
+									<td>临安</td>
+									<td>接受</td>
+								</tr>
+								<tr>
+									<td>th111</td>
+									<td>B</td>
+									<td>钢笔</td>
+									<td></td>
+									<td>100</td>
+									<td>临安</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-5 dataTables_info">
+						<p>共<span>10</span>条数据</p>
+						<p> 每页显示
+							<select class="form-inline form-control select-sm pd0">
+								<option>10</option>
+								<option>20</option>
+								<option>30</option>
+							</select>
+						</p>
+						<p>共<span>2</span>页</p>
+					</div>
+					<div class="col-sm-7">
+						<div class="dataTables_paginate paging_simple_numbers" id="example2_paginate">
+							<ul class="pagination">
+								<li class="disabled"><a href="#"><i class="fa fa-angle-left">上一页</i></a></li>
+								<li><a href="#">1</a></li>
+								<li class="active"><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#"><i class="fa fa-angle-right">下一页</i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

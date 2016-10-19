@@ -1,0 +1,86 @@
+<div class="box-side">
+	<div class="box-body">
+		<div class="form-blcok">
+			<div class="form-inline">
+				<label>产品编号：</label>
+				<input class="form-control input-sm" type="text" value="" />
+			</div>
+			
+			<div class="form-inline">
+				<label>产品名称：</label>
+				<input class="form-control input-sm" type="text" value="" />
+			</div>
+			<div class="form-inline">
+				<label>规格：</label>
+				<input class="form-control input-sm" type="text" value="" />
+			</div>
+			
+			<div class="form-inline">
+				<label>新仓库：</label>
+				<input class="form-control input-sm" type="text" value="" />
+			</div>
+			
+			<div class="form-inline">
+				<label>数量：</label>
+				<input class="form-control input-sm" type="text" value="" />
+			</div>
+			
+			<div class="form-inline">
+				<label>物流：</label>
+				<input class="form-control input-sm" type="text" value="" />
+			</div>
+			
+			<div class="form-inline">
+				<label>发货单号：</label>
+				<input class="form-control input-sm" type="text" value="" />
+			</div>
+			
+			<div class="form-inline">
+				<label>发货凭证：</label>
+				<div class="picture-wrap inline">
+					<ul class="picture-blcok">
+						<li class="btn-upload">
+							<input class="upload" type="file" accept="image/*" />
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="btn-wrap">
+				<a class="btn btn-primary btn-sm">提交</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	//点击上传图片
+	$(".upload").on("change", function() {
+			var files = $(this)[0].files;
+			var length = files.length;
+			for (var i = 0; i < length; i++) {
+				var urls = getObjectURL(files[i]);
+				var lis = $('<li class="img-items"></li>').appendTo($('.picture-blcok'));
+				var imgBox = $('<div class="img-box"></div>').appendTo(lis);
+				$('<i class="icon-close"></i>').appendTo(imgBox);
+				$('<img src=' + urls + ' />').appendTo(imgBox);
+			}
+			//		alert($(this).val())
+			$(this).val("");
+		})
+		//获取URL
+	function getObjectURL(file) {
+		var url = null;
+		if (window.createObjectURL != undefined) { // basic
+			url = window.createObjectURL(file);
+		} else if (window.URL != undefined) { // mozilla(firefox)
+			url = window.URL.createObjectURL(file);
+		} else if (window.webkitURL != undefined) { // webkit or chrome
+			url = window.webkitURL.createObjectURL(file);
+		}
+		return url;
+	}
+	$(".picture-wrap").on("click", ".img-items", function() {
+		$(this).remove();
+	});
+</script>

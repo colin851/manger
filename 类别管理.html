@@ -1,0 +1,166 @@
+
+<div class="box">
+		<div class="box-body">
+			<div class="form-inline">
+				<div class="row">
+					<div class="col-sm-12 table-responsive">
+						<table class="table table-bordered table-hover">
+							<thead>
+								<tr role="row">
+									<th>序号</th>
+									<th>一级类别</th>
+									<th>类别</th>
+									<th>备注</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>家纺</td>
+									<td>床</td>
+									<td>床类</td>
+									<td>
+										<a class="delete">删除</a>
+										<a>编辑</a>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>家纺</td>
+									<td>床</td>
+									<td>床类</td>
+									<td>
+										<a>删除</a>
+										<a>编辑</a>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>家纺</td>
+									<td>床</td>
+									<td>床类</td>
+									<td>
+										<a>删除</a>
+										<a>编辑</a>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>家纺</td>
+									<td>床</td>
+									<td>床类</td>
+									<td>
+										<a>删除</a>
+										<a>编辑</a>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>家纺</td>
+									<td>床</td>
+									<td>床类</td>
+									<td>
+										<a>删除</a>
+										<a>编辑</a>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>家纺</td>
+									<td>床</td>
+									<td>床类</td>
+									<td>
+										<a>删除</a>
+										<a>编辑</a>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>家纺</td>
+									<td>床</td>
+									<td>床类</td>
+									<td>
+										<a>删除</a>
+										<a>编辑</a>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>家纺</td>
+									<td>床</td>
+									<td>床类</td>
+									<td>
+										<a>删除</a>
+										<a>编辑</a>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>家纺</td>
+									<td>床</td>
+									<td>床类</td>
+									<td>
+										<a>删除</a>
+										<a>编辑</a>
+									</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>家纺</td>
+									<td>床</td>
+									<td>床类</td>
+									<td>
+										<a>删除</a>
+										<a>编辑</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-5 dataTables_info">
+						<p>共<span>10</span>条数据</p>
+						<p> 每页显示
+							<select class="form-inline form-control select-sm pd0">
+								<option>10</option>
+								<option>20</option>
+								<option>30</option>
+							</select>
+						</p>
+						<p>共<span>2</span>页</p>
+					</div>
+					<div class="col-sm-7">
+						<div class="dataTables_paginate paging_simple_numbers" id="example2_paginate">
+							<ul class="pagination">
+								<li class="disabled"><a href="#"><i class="fa fa-angle-left">上一页</i></a></li>
+								<li><a href="#">1</a></li>
+								<li class="active"><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#"><i class="fa fa-angle-right">下一页</i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+<script>
+	$(".delete").on("click",function(){
+		var confirm = new warnBox({
+			winWidth: "300px",
+	        tittle: "确定删除吗",
+	        iSshowBtn: true,
+	        shadeOff: false,
+	        confirmBtnText: "删除",
+	        cancelBtnText: "取消",
+	        callBack: function () {
+        	}
+		})
+	})
+</script>

@@ -1,0 +1,65 @@
+<div class="box-side">
+	<div class="box-body">
+		<div class="form-blcok">
+			<div class="form-inline">
+				<label>账号：</label>
+				<input class="form-control input-sm" type="text" value="AA" />
+			</div>
+			
+			<div class="form-inline">
+				<label>密码：</label>
+				<input class="form-control input-sm" type="password" value="AA" />
+			</div>
+			
+			<div class="form-inline">
+				<label>管理组：</label>
+				<select>
+					<option>仓库管理员</option>
+					<option>采购管理员</option>
+				</select>
+			</div>
+			
+			<div class="form-inline">
+				<label>仓库：</label>
+				<input class="form-control input-sm" type="text" value="临安" />
+			</div>
+
+			<div class="btn-wrap">
+				<a class="btn btn-default btn-sm">取消</a>
+				<a class="btn btn-primary btn-sm">保存</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	//点击上传图片
+	$(".upload").on("change", function() {
+			var files = $(this)[0].files;
+			var length = files.length;
+			for (var i = 0; i < length; i++) {
+				var urls = getObjectURL(files[i]);
+				var lis = $('<li class="img-items"></li>').appendTo($('.picture-blcok'));
+				var imgBox = $('<div class="img-box"></div>').appendTo(lis);
+				$('<i class="icon-close"></i>').appendTo(imgBox);
+				$('<img src=' + urls + ' />').appendTo(imgBox);
+			}
+			//		alert($(this).val())
+			$(this).val("");
+		})
+		//获取URL
+	function getObjectURL(file) {
+		var url = null;
+		if (window.createObjectURL != undefined) { // basic
+			url = window.createObjectURL(file);
+		} else if (window.URL != undefined) { // mozilla(firefox)
+			url = window.URL.createObjectURL(file);
+		} else if (window.webkitURL != undefined) { // webkit or chrome
+			url = window.webkitURL.createObjectURL(file);
+		}
+		return url;
+	}
+	$(".picture-wrap").on("click", ".img-items", function() {
+		$(this).remove();
+	});
+</script>

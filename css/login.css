@@ -1,0 +1,281 @@
+@charset "utf-8";
+html,body{
+	width: 100%;
+	height: 100%;
+}
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #222d32;
+	/*background-color: #d2d6de;*/
+	overflow: hidden;
+	font-family: "方正黑体简体", "微软雅黑", sans-serif;
+}
+
+*{
+	box-sizing:  border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0;
+	font-family: "方正黑体简体", "微软雅黑", sans-serif;
+}
+
+img {
+	border: none;
+	display: block;
+	max-width: 100%;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+}
+.theme{
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	overflow: hidden;
+}
+.theme span{
+	display: block;
+	float: left;
+	border: 1px solid white;
+	width: 20px;
+	height: 20px;
+	margin-right: 6px;
+}
+.change-theme{
+	width: 18px;
+	height: 18px;
+	cursor: pointer;
+}
+.pure{
+	cursor: pointer;
+}
+.b_1{
+	background-image: url(../img/b_1.jpg);
+}
+.b_2{
+	background-image: url(../img/b_2.jpg);
+}
+.b_3{
+	background-image: url(../img/b_3.jpg);
+}
+.content{
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size:100% 100% ; 
+	display: -webkit-box;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	align-items: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+	-webkit-box-align: center;
+	
+}
+.login-wrap{
+	height: 320px;
+	overflow: hidden;
+	border-radius: 4px;
+	box-shadow: 0 2px 18px rgba(0,0,0,.8) ;
+	/*left: 50%;
+	top: 50%;*/
+	/*-webkit-transform: translate3d(-50%,-50%,0);
+	-moz-transform: translate3d(-50%,-50%,0);
+	-ms-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);*/
+}
+.login-img{
+	display: block;
+	float: left;
+	/*width: 300px;*/
+	height: 320px;
+}
+.login-blcok{
+	float: left;
+	background: white;
+	height: 444px;
+	padding: 20px;
+	-webkit-font-smoothing: antialiased;
+	border-left: 1px solid #cc;
+	position: relative;
+}
+.login-blcok:before{
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 30px;
+	left: -24px;
+	border-left: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-top: 10px solid transparent;
+	border-right: 14px solid #ccc;
+}
+.login-blcok:after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 30px;
+	left: -23px;
+	border-left: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-top: 10px solid transparent;
+	border-right: 14px solid white;
+}
+.login-tittle{
+	font-size: 20px;
+	color: #222d32;
+	line-height: 40px;
+	margin-bottom: 10px;
+}
+.uesr,
+.password{
+	width: 250px;
+	height: 40px;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	background: #ecf4f7;
+	display: -webkit-box;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.icon-user,
+.icon-password{
+	width: 25px;
+	height: 25px;
+	margin-left: 6px;
+	margin-right: 6px;
+}
+.form-group input{
+	width: 200px;
+	height: 30px;
+	border: none;
+	background: #ecf4f7;
+	outline: none;
+}
+.radio{
+	cursor: pointer;
+}
+.icon-right{
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #2489c5;
+	float: left;
+	margin-right: 5px;
+}
+.checked .icon-right{
+	background-image: url(../img/blue.png);
+	background-size: 18px 18px;
+}
+.radio span{
+	float: left;
+	font-size: 14px;
+}
+.login-box{
+	overflow: hidden;
+	display: -webkit-box;
+	display: flex;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-justify-content: space-between;
+	justify-content:  space-between;
+	-webkit-box-pack: justify;
+}
+.btn-login:active {
+    -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+    -moz-box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
+    box-shadow: inset 0 3px 5px rgba(0,0,0,0.125)
+}
+.btn-login {
+	display: block;
+	color: white;
+    background-color: #3c8dbc;
+    border-color: #367fa9;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.btn-login:hover,.btn-login:active,.btn-login.hover {
+    background-color: #367fa9
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
